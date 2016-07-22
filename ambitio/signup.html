@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Ambitio: Sign-Up</title>
+    <meta charset="UTF-8">
+   
+    <!-- CSS and JScripts -->
+    <link rel="stylesheet" type="text/css" href="css/overboot.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+  </head>
+  
+  <body>
+    <form method="post" id="regform" onSubmit="submitForm();return false">
+      <input type="text" placeholder="Username" id="user_name" name="user_name" />
+      <input type="email" placeholder="Email" id="user_email" name="user_email" />
+      <input type="password" placeholder="Password" id="password" name="password" />
+      <input type="password" placeholder="Retype password" id="rpassword" name="rpassword" />
+      <input type="submit" id="submit"/>
+    </form>
+    
+  </body>  
+  
+  <script>
+    function submitForm(){
+      console.log("submitted");
+      var data1=$('#regform').serialize();
+      $.ajax({
+        type:'POST',
+        url:'signup.php',
+        data:data1,
+        success: function(response){
+          console.log(response);
+          if(response==1)
+            alert('email taken');
+            else if(response==2)
+              alert('registered');
+              else
+                alert(response);
+        }
+      });
+      return false;
+    }
+  </script>
+</html>
+    

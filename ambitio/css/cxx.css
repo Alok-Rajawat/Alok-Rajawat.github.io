@@ -1,0 +1,74 @@
+body{
+  width:100%;
+  background:blue;
+  color:black;
+}
+nav{
+  width:100%;
+  background:rgba(195,62,64,0.63);
+  padding:0;
+  height:40px;
+}
+#navleft{
+  float:left;
+  height:40px;
+}
+#navright{
+  overflow:hidden;
+  height:40px;
+}
+#main{
+  width:100%;
+  background:green;
+  overflow:hidden;
+}
+div > ul{
+  padding:10px 0px; 
+  margin:0;
+}
+div > ul li{
+  display:inline; 
+  padding:10px 40px;
+}
+#navrighticon{
+  display:none;
+}
+#navlefticon{
+  display:none;
+}
+@media screen and (max-width:800px) {
+  #navleft ul li:not(:first-child) {display: none;}
+  #navleft ul li#navlefticon {
+    display: inline-block;
+    padding:0;
+    margin-top:-10px;
+  }
+}
+@media screen and (max-width:440px) {
+  #navleft ul li:not(:first-child) {display: none;}
+  #navright ul li{display:none;}
+  #navleft ul li#navlefticon {
+    display: inline-block;
+    padding:0;
+    margin-top:-10px;
+  }
+  #navright ul li#navrighticon {
+    float:right;
+    display: inline-block;
+    padding:0;
+    margin-top:-10px;
+  }
+}
+
+#hero{
+  margin:10px auto;
+}
+#about{
+  margin:10px auto;
+}
+#services{
+  margin:10px auto;
+}
+#contact{
+  margin:10px auto;
+}
