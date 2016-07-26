@@ -1,0 +1,20 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# Explicit paths specified without -i or -o; assuming --only paths...
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   ambitio/css/cxx.css
+#	modified:   ambitio/index.html
+#	new file:   ambitio/pics/banner.png
+#	new file:   ambitio/pics/bgs1.jpeg
+#	new file:   ambitio/pics/bgs2.png
+#	new file:   ambitio/pics/bgs3.jpg
+#	new file:   ambitio/pics/bgs4.jpg
+#	new file:   ambitio/pics/bgs5.jpg
+#	new file:   ambitio/pics/e.jpg
+#	new file:   ambitio/pics/hero.jpg
+#
+

@@ -3,72 +3,50 @@ body{
   background:blue;
   color:black;
 }
-nav{
-  width:100%;
-  background:rgba(195,62,64,0.63);
-  padding:0;
-  height:40px;
+header{
+  box-shadow: 0 25px 25px -20px #000;
+  position:relative;
+  z-index:2;
 }
-#navleft{
-  float:left;
-  height:40px;
+h1{
+  font-size:6em;
+  margin:5%;
 }
-#navright{
-  overflow:hidden;
-  height:40px;
+p{
+  font-size:2em;
+  font-weight:500;
+  margin: 2% 5% 10% 5%;
+  font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+  line-height:0.85;
+  word-spacing:5px;
 }
 #main{
   width:100%;
-  background:green;
-  overflow:hidden;
 }
-div > ul{
-  padding:10px 0px; 
-  margin:0;
+#top{
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../pics/bgs1.jpeg) no-repeat;
+  background-size:cover;
 }
-div > ul li{
-  display:inline; 
-  padding:10px 40px;
-}
-#navrighticon{
-  display:none;
-}
-#navlefticon{
-  display:none;
-}
-@media screen and (max-width:800px) {
-  #navleft ul li:not(:first-child) {display: none;}
-  #navleft ul li#navlefticon {
-    display: inline-block;
-    padding:0;
-    margin-top:-10px;
-  }
-}
-@media screen and (max-width:440px) {
-  #navleft ul li:not(:first-child) {display: none;}
-  #navright ul li{display:none;}
-  #navleft ul li#navlefticon {
-    display: inline-block;
-    padding:0;
-    margin-top:-10px;
-  }
-  #navright ul li#navrighticon {
-    float:right;
-    display: inline-block;
-    padding:0;
-    margin-top:-10px;
-  }
-}
-
 #hero{
   margin:10px auto;
 }
 #about{
-  margin:10px auto;
+  background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url(../pics/bgs2.png) no-repeat;
+  background-size:cover;
 }
 #services{
-  margin:10px auto;
+  background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../pics/bgs3.jpg) no-repeat;
+  background-size:cover;
 }
 #contact{
-  margin:10px auto;
+  background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url(../pics/bgs4.jpg) no-repeat;
+  background-size:cover;
+}
+#cont{
+  max-width:80%;
+  margin:0 20%;
+}
+.fullsc{
+  min-height:150vh;
+  width:100%;
 }
